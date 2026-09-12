@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldBorder1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="25%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="75%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Certificate Canvas -->
+  <rect width="800" height="560" fill="url(#certBg1)" />
+
+  <!-- Guilloche / Border Frames -->
+  <rect x="25" y="25" width="750" height="510" rx="12" fill="none" stroke="url(#goldBorder1)" stroke-width="3" />
+  <rect x="35" y="35" width="730" height="490" rx="8" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="8,4" />
+  <rect x="42" y="42" width="716" height="476" rx="6" fill="#0f172a" fill-opacity="0.6" stroke="url(#goldBorder1)" stroke-width="1" />
+
+  <!-- Corner Ornaments -->
+  <g fill="url(#goldBorder1)">
+    <polygon points="25,25 65,25 25,65" />
+    <polygon points="775,25 735,25 775,65" />
+    <polygon points="25,535 65,535 25,495" />
+    <polygon points="775,535 735,535 775,495" />
+  </g>
+
+  <!-- Top Emblem / Seal -->
+  <circle cx="400" cy="100" r="36" fill="#1e293b" stroke="url(#goldBorder1)" stroke-width="2.5" filter="url(#goldGlow)" />
+  <circle cx="400" cy="100" r="28" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="384" y="112" font-size="30">🎓</text>
+
+  <!-- Title -->
+  <text x="400" y="165" text-anchor="middle" fill="#94a3b8" font-family="'Prompt', sans-serif" font-size="14" letter-spacing="4">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</text>
+  <text x="400" y="200" text-anchor="middle" fill="url(#goldBorder1)" font-family="'Prompt', sans-serif" font-size="22" font-weight="bold">ใบประกาศนียบัตรวิชาชีพ (ปวช.)</text>
+  <line x1="260" y1="215" x2="540" y2="215" stroke="url(#goldBorder1)" stroke-width="1.5" />
+
+  <!-- Content -->
+  <text x="400" y="255" text-anchor="middle" fill="#e2e8f0" font-family="'Prompt', sans-serif" font-size="16">ใบประกาศนียบัตรนี้ให้ไว้เพื่อแสดงว่า</text>
+  <text x="400" y="300" text-anchor="middle" fill="#38bdf8" font-family="'Prompt', sans-serif" font-size="26" font-weight="bold">นางสาวณัฐกานต์ ปลอดโยธา</text>
+  
+  <text x="400" y="345" text-anchor="middle" fill="#cbd5e1" font-family="'Prompt', sans-serif" font-size="16">สำเร็จการศึกษาตามหลักสูตรประกาศนียบัตรวิชาชีพ พุทธศักราช 2568</text>
+  <text x="400" y="380" text-anchor="middle" fill="#fef08a" font-family="'Prompt', sans-serif" font-size="17" font-weight="600">ประเภทวิชา พาณิชยกรรม สาขาวิชา คอมพิวเตอร์ธุรกิจ</text>
+
+  <!-- Ribbon Seal Bottom Left -->
+  <g transform="translate(110, 430)">
+    <circle cx="35" cy="35" r="32" fill="#1e1b4b" stroke="url(#goldBorder1)" stroke-width="2" />
+    <text x="18" y="40" fill="#fef08a" font-family="'Prompt', sans-serif" font-size="11" font-weight="bold">CERTIFIED</text>
+    <path d="M 20 62 L 10 95 L 35 80 L 60 95 L 50 62 Z" fill="url(#goldBorder1)" />
+  </g>
+
+  <!-- Signature Bottom Right -->
+  <g transform="translate(530, 420)">
+    <line x1="20" y1="55" x2="200" y2="55" stroke="#94a3b8" stroke-width="1" />
+    <path d="M 40 50 Q 80 20 110 50 T 170 45" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.8" />
+    <text x="110" y="75" text-anchor="middle" fill="#94a3b8" font-family="'Prompt', sans-serif" font-size="12">ผู้อำนวยการสถานศึกษา</text>
+  </g>
+</svg>

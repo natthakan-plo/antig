@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lunaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c20" />
+      <stop offset="50%" stop-color="#16122e" />
+      <stop offset="100%" stop-color="#090714" />
+    </linearGradient>
+    <linearGradient id="luxuryGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="diamondGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#cffafe" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="luxuryGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#lunaBg)" />
+
+  <!-- Ambient light -->
+  <circle cx="250" cy="220" r="160" fill="#f59e0b" opacity="0.08" filter="url(#luxuryGlow)" />
+  <circle cx="600" cy="200" r="150" fill="#818cf8" opacity="0.1" filter="url(#luxuryGlow)" />
+
+  <!-- Browser Frame Mockup -->
+  <rect x="40" y="30" width="720" height="390" rx="14" fill="#130e26" stroke="#2e214d" stroke-width="1.5" />
+  
+  <!-- Browser Header -->
+  <rect x="40" y="30" width="720" height="42" rx="14" fill="#1d1538" />
+  <circle cx="65" cy="51" r="5" fill="#f43f5e" />
+  <circle cx="83" cy="51" r="5" fill="#f59e0b" />
+  <circle cx="101" cy="51" r="5" fill="#10b981" />
+  <rect x="135" y="40" width="400" height="22" rx="6" fill="#110c22" />
+  <text x="150" y="55" fill="#a594c9" font-family="'Segoe UI', sans-serif" font-size="11">https://lunajewelry.com/collections/fine-diamonds</text>
+  <rect x="660" y="39" width="80" height="24" rx="6" fill="#f59e0b" fill-opacity="0.2" />
+  <text x="670" y="55" fill="#fef08a" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Bag (1)</text>
+
+  <!-- Luxury Navbar -->
+  <rect x="65" y="85" width="670" height="45" rx="8" fill="#1a1233" stroke="#33245c" stroke-width="1" />
+  <text x="85" y="113" fill="url(#luxuryGold)" font-family="'Cinzel', 'Georgia', serif" font-size="18" font-weight="bold" letter-spacing="3">LUNA JEWELRY</text>
+  <text x="320" y="112" fill="#fef08a" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Rings</text>
+  <text x="380" y="112" fill="#c4b5fd" font-family="'Segoe UI', sans-serif" font-size="11">Necklaces</text>
+  <text x="460" y="112" fill="#c4b5fd" font-family="'Segoe UI', sans-serif" font-size="11">Earrings</text>
+  <text x="535" y="112" fill="#c4b5fd" font-family="'Segoe UI', sans-serif" font-size="11">Bridal</text>
+  <text x="600" y="112" fill="#c4b5fd" font-family="'Segoe UI', sans-serif" font-size="11">Lookbook</text>
+
+  <!-- Left: Featured Luxury Diamond Ring Showcase -->
+  <rect x="65" y="145" width="370" height="250" rx="12" fill="#1a1336" stroke="#4c3575" stroke-width="1" />
+  
+  <!-- Jewelry Visual Area -->
+  <rect x="85" y="165" width="150" height="145" rx="10" fill="#0c0818" stroke="#352554" stroke-width="1" />
+  
+  <!-- Ring illustration -->
+  <ellipse cx="160" cy="245" rx="38" ry="24" fill="none" stroke="url(#luxuryGold)" stroke-width="6" />
+  <ellipse cx="160" cy="242" rx="36" ry="22" fill="none" stroke="#fef08a" stroke-width="2" />
+  
+  <!-- Diamond gem on top -->
+  <polygon points="160,205 145,218 152,230 168,230 175,218" fill="url(#diamondGrad)" filter="url(#luxuryGlow)" stroke="#ffffff" stroke-width="1.5" />
+  <polygon points="160,205 152,230 168,230" fill="#bae6fd" opacity="0.7" />
+
+  <!-- Sparkles -->
+  <text x="125" y="195" fill="#fef08a" font-size="16">✨</text>
+  <text x="185" y="210" fill="#bae6fd" font-size="14">✦</text>
+
+  <!-- Product Details -->
+  <text x="250" y="185" fill="url(#luxuryGold)" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" letter-spacing="1">EXCLUSIVE ATELIER</text>
+  <text x="250" y="208" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">Solitaire Diamond Ring</text>
+  <text x="250" y="226" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="10">White Gold 18K / 1.5 Carat</text>
+  <text x="250" y="244" fill="#a78bfa" font-family="'Segoe UI', sans-serif" font-size="9">Certified Conflict-Free Diamond</text>
+
+  <text x="250" y="275" fill="url(#luxuryGold)" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold">฿68,900</text>
+  
+  <rect x="85" y="325" width="330" height="42" rx="8" fill="url(#luxuryGold)" />
+  <text x="180" y="351" fill="#1b1202" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">🛍️ สั่งซื้อทันที (Order Now)</text>
+
+  <!-- Right: Technical Highlights Card -->
+  <rect x="455" y="145" width="280" height="250" rx="12" fill="#1a1336" stroke="#4c3575" stroke-width="1" />
+  <text x="475" y="175" fill="#fef08a" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">✨ Web Design Highlights</text>
+
+  <rect x="475" y="195" width="240" height="52" rx="8" fill="#120c24" stroke="#352554" stroke-width="1" />
+  <text x="490" y="215" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Luxury & Modern Visuals</text>
+  <text x="490" y="233" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9">ดีไซน์ภาพลักษณ์หรูหรา น่าเชื่อถือ เข้าถึงกลุ่มพรีเมียม</text>
+
+  <rect x="475" y="258" width="240" height="52" rx="8" fill="#120c24" stroke="#352554" stroke-width="1" />
+  <text x="490" y="278" fill="#a78bfa" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">HTML5 / Bootstrap 5 / JS</text>
+  <text x="490" y="296" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9">โครงสร้างเว็บมาตรฐาน รองรับ Responsive ทุกอุปกรณ์</text>
+
+  <rect x="475" y="320" width="240" height="52" rx="8" fill="#120c24" stroke="#352554" stroke-width="1" />
+  <text x="490" y="340" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">E-Commerce Checkout</text>
+  <text x="490" y="358" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9">หน้าแรก, แคตตาล็อกแสดงสินค้า และระบบสั่งซื้อ</text>
+</svg>

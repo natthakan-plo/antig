@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iotBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06181b" />
+      <stop offset="50%" stop-color="#0b2428" />
+      <stop offset="100%" stop-color="#041215" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#iotBg)" />
+
+  <!-- Ambient light -->
+  <circle cx="200" cy="200" r="140" fill="#10b981" opacity="0.1" filter="url(#cyanGlow)" />
+  <circle cx="650" cy="220" r="130" fill="#06b6d4" opacity="0.1" filter="url(#cyanGlow)" />
+
+  <!-- Top bar -->
+  <rect x="40" y="30" width="720" height="44" rx="10" fill="#0b2e35" stroke="#134e4a" stroke-width="1.5" />
+  <circle cx="65" cy="52" r="6" fill="#10b981" filter="url(#cyanGlow)" />
+  <text x="85" y="57" fill="#2dd4bf" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">IoT AIR QUALITY MONITORING & ALERT SYSTEM</text>
+  <rect x="580" y="40" width="160" height="24" rx="12" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1" />
+  <circle cx="595" cy="52" r="4" fill="#10b981" />
+  <text x="608" y="56" fill="#6ee7b7" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">LIVE SENSOR ONLINE</text>
+
+  <!-- Left Card: Gauge and Real-time Sensor Metrics -->
+  <rect x="40" y="90" width="370" height="320" rx="12" fill="#09252a" stroke="#115e59" stroke-width="1" />
+  <text x="65" y="120" fill="#99f6e4" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">REAL-TIME AIR METRICS</text>
+
+  <!-- PM2.5 Main Gauge Circle -->
+  <circle cx="150" cy="215" r="70" fill="none" stroke="#134e4a" stroke-width="12" />
+  <circle cx="150" cy="215" r="70" fill="none" stroke="#10b981" stroke-width="12" stroke-dasharray="330" stroke-dashoffset="100" stroke-linecap="round" filter="url(#cyanGlow)" />
+  <text x="122" y="210" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold">18</text>
+  <text x="158" y="200" fill="#5eead4" font-family="'Segoe UI', sans-serif" font-size="11">µg/m³</text>
+  <text x="130" y="232" fill="#a7f3d0" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">PM 2.5</text>
+  <rect x="115" y="245" width="70" height="20" rx="10" fill="#10b981" fill-opacity="0.2" />
+  <text x="126" y="259" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">อากาศดีมาก</text>
+
+  <!-- Sub-sensors -->
+  <rect x="245" y="145" width="145" height="65" rx="8" fill="#051c20" stroke="#0f766e" stroke-width="1" />
+  <text x="258" y="167" fill="#99f6e4" font-family="'Segoe UI', sans-serif" font-size="10">CO₂ (คาร์บอนฯ)</text>
+  <text x="258" y="195" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold">412 <tspan font-size="11" fill="#6ee7b7">PPM</tspan></text>
+
+  <rect x="245" y="225" width="145" height="65" rx="8" fill="#051c20" stroke="#0f766e" stroke-width="1" />
+  <text x="258" y="247" fill="#99f6e4" font-family="'Segoe UI', sans-serif" font-size="10">อุณหภูมิ & ความชื้น</text>
+  <text x="258" y="275" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold">26.4°C <tspan font-size="11" fill="#38bdf8">58%</tspan></text>
+
+  <!-- Hardware info -->
+  <rect x="65" y="315" width="325" height="75" rx="8" fill="#04181b" stroke="#134e4a" stroke-width="1" />
+  <text x="80" y="337" fill="#2dd4bf" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Hardware & Sensors:</text>
+  <text x="80" y="357" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="10">• ESP32 Wi-Fi Microcontroller + PMS7003 Dust Sensor</text>
+  <text x="80" y="375" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="10">• MQ-135 Gas Sensor + DHT22 Temp/Humidity</text>
+
+  <!-- Right: Smartphone Push Alert & Line Notify UI -->
+  <rect x="430" y="90" width="330" height="320" rx="12" fill="#09252a" stroke="#115e59" stroke-width="1" />
+  <text x="455" y="120" fill="#99f6e4" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">SMARTPHONE ALERT & LINE NOTIFY</text>
+
+  <!-- Mobile phone mockup -->
+  <rect x="455" y="135" width="150" height="255" rx="16" fill="#051518" stroke="#14b8a6" stroke-width="1.5" />
+  <rect x="495" y="142" width="70" height="8" rx="4" fill="#134e4a" />
+
+  <!-- Push notification 1 -->
+  <rect x="465" y="165" width="130" height="65" rx="8" fill="#0c353b" stroke="#14b8a6" stroke-width="1" />
+  <circle cx="480" cy="180" r="7" fill="#10b981" />
+  <text x="493" y="184" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold">AirAlert Bot</text>
+  <text x="472" y="200" fill="#a7f3d0" font-family="'Segoe UI', sans-serif" font-size="7">แจ้งเตือนสถานะอากาศ:</text>
+  <text x="472" y="212" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="7">ค่าฝุ่น PM2.5 อยู่ในเกณฑ์ดี</text>
+  <text x="472" y="222" fill="#6ee7b7" font-family="'Segoe UI', sans-serif" font-size="7">ปลอดภัย เหมาะทำกิจกรรม</text>
+
+  <!-- Push notification 2 -->
+  <rect x="465" y="240" width="130" height="65" rx="8" fill="#0c353b" stroke="#0ea5e9" stroke-width="1" />
+  <circle cx="480" cy="255" r="7" fill="#0ea5e9" />
+  <text x="493" y="259" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold">Smart IoT App</text>
+  <text x="472" y="275" fill="#bae6fd" font-family="'Segoe UI', sans-serif" font-size="7">Sensor Node #01</text>
+  <text x="472" y="287" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="7">อัปเดตข้อมูลอัตโนมัติ</text>
+  <text x="472" y="297" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="7">ทุก 30 วินาที ผ่าน Cloud</text>
+
+  <!-- Right stats box -->
+  <rect x="620" y="145" width="125" height="110" rx="8" fill="#041b1e" stroke="#134e4a" stroke-width="1" />
+  <text x="630" y="168" fill="#2dd4bf" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">Cloud IoT</text>
+  <text x="630" y="190" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">MQTT / HTTP</text>
+  <text x="630" y="210" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">ส่งข้อมูลเรียลไทม์</text>
+  <text x="630" y="225" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">ไปยังมือถือทันที</text>
+  <rect x="630" y="235" width="80" height="15" rx="4" fill="#10b981" fill-opacity="0.2" />
+  <text x="636" y="246" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold">Fast &amp; Accurate</text>
+
+  <rect x="620" y="270" width="125" height="115" rx="8" fill="#041b1e" stroke="#134e4a" stroke-width="1" />
+  <text x="630" y="295" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">Early Warning</text>
+  <text x="630" y="318" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">เตือนภัยฝุ่นพิษ</text>
+  <text x="630" y="338" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">ส่งข้อความเตือนเมื่อ</text>
+  <text x="630" y="352" fill="#fca5a5" font-family="'Segoe UI', sans-serif" font-size="9">ค่าเกินมาตรฐานทันที</text>
+</svg>
